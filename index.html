@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./public/assets/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | IP Address Tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="./public/styles/styles.css" />
+  </head>
+  <body>
+    <div class="tracker-container">
+      <div class="search-content">
+        <h1>IP Address Tracker</h1>
+        <form id="formIp" class="input-search">
+          <input
+            type="text"
+            placeholder="Search for any IP address or domain"
+            name="ip"
+            required
+          />
+          <button type="submit">
+            <img src="./public/assets/icon-arrow.svg" alt="arrow icon" />
+          </button>
+        </form>
+        <div class="info-content">
+          <div id="card-list" class="results"></div>
+        </div>
+      </div>
+      <div id="mapid"></div>
+    </div>
+    <script
+      async
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    ></script>
+    <script async type="module" src="./src/script.js"></script>
+  </body>
+</html>
